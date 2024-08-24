@@ -78,8 +78,8 @@ const Room = () => {
     socket.emit("clear-res" , {id})
     const data = { code, userLang, id, question };
     try {
-      // await axios.post("https://webrtc-backend-t27s.onrender.com/submit", data);
-      await axios.post("http://3.27.104.165:8000/submit", data);
+      await axios.post("https://webrtc-backend-t27s.onrender.com/submit", data);
+      // await axios.post("http://localhost:8000/submit", data);
     } catch (error) {
       console.error("Submit error:", error);
     }

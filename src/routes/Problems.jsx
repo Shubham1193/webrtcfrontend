@@ -28,8 +28,8 @@ const Problems = () => {
     const fetchProblems = async () => {
       try {
         const response = await axios.get(
-          // "https://webrtc-backend-t27s.onrender.com/api/user/problems"
-          "http://3.27.104.165:8000/api/user/problems"
+          "https://webrtc-backend-t27s.onrender.com/api/user/problems"
+          // "http://3.27.104.165:8000/api/user/problems"
         );
         console.log(response.data);
         setQuestions(response.data);

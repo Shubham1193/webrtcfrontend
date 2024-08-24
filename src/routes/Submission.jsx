@@ -14,7 +14,8 @@ const Submission = () => {
   useEffect(() => {
     const fetchSubmission = async () => {
       try {
-        const res = await axios.get("http://3.27.104.165:8000/api/user/submission", {
+        const res = await axios.get("https://webrtc-backend-t27s.onrender.com/api/user/submission", {
+          // const res = await axios.get("http://localhost:8000/api/user/submission", {
           headers: {
             id: currentUser._id
           }
